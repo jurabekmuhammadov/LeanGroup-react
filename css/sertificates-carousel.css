@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.Certificate .slick-slider {
+  position: relative;
+}
+.Certificate .slick-slider #prev {
+  position: absolute;
+  left: -20px;
+  top: 42%;
+  z-index: 100;
+  background-color: transparent;
+}
+.Certificate .slick-slider #prev::before {
+  content: url("../../assets/images/back-arrow.svg");
+  font-size: 40px;
+  color: black;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.Certificate .slick-slider #prev:hover::before {
+  opacity: 1;
+}
+@media (max-width: 1200px) {
+  .Certificate .slick-slider #prev {
+    left: -10px;
+  }
+}
+.Certificate .slick-slider #next {
+  position: absolute;
+  z-index: 100;
+  right: -10px;
+  top: 42%;
+  background-color: transparent;
+}
+.Certificate .slick-slider #next::before {
+  content: url("../../assets/images/next-arrow.svg");
+  font-size: 40px;
+  color: black;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.Certificate .slick-slider #next:hover::before {
+  opacity: 1;
+}
+@media (max-width: 1280px) {
+  .Certificate .slick-slider #next {
+    right: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .Certificate .slick-slider #next {
+    right: 0px;
+  }
+}
+.Certificate .slick-slider .slick-list {
+  margin: 10px;
+}
+.Certificate .slick-slider .slick-list .slick-track .slick-slide {
+  padding: 0 20px;
+}
+.Certificate .slick-slider .slick-list .slick-track .slick-slide div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .Certificate .slick-slider .slick-list .slick-track .slick-slide {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 570px) {
+  .Certificate .slick-slider .slick-list .slick-track .slick-slide {
+    padding: 0;
+  }
+}
+.Certificate .slick-slider .slick-dots {
+  position: static;
+  margin-top: 20px;
+}
+.Certificate .slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid #ef7c00;
+  transition: 0.3s;
+}
+.Certificate .slick-slider .slick-dots li button::before {
+  content: "";
+}
+.Certificate .slick-slider .slick-dots li button:hover {
+  background-color: #ef7c00;
+}
+.Certificate .slick-slider .slick-dots .slick-active button {
+  background-color: #ef7c00;
+}

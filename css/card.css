@@ -1,0 +1,125 @@
+.card-container {
+  width: 230px;
+  height: 250px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-container .card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card-container .card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-container .card .front-content img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.card-container .card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(-5deg, #ff0f7b 0%, #ef7c00 100%);
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translatex(104%);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card-container .card .content .name {
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+.card-container .card .content .position {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  color: white;
+  margin-bottom: 20px;
+}
+.card-container .card .content .number {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+.card-container .card .content .email {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  color: white;
+}
+.card-container .card:hover .content {
+  transform: translateY(0);
+}
+.card-container .card:hover .front-content {
+  transform: translateX(20%);
+}
+@media (max-width: 1250px) {
+  .card-container {
+    width: 200px;
+    height: 200px;
+  }
+  .card-container .card .front-content img {
+    width: 150px;
+  }
+  .card-container .card .content .name {
+    font-size: 16px;
+  }
+  .card-container .card .content .position {
+    font-size: 12px;
+  }
+  .card-container .card .content .number {
+    font-size: 12px;
+  }
+  .card-container .card .content .email {
+    font-size: 12px;
+  }
+}
+@media (max-width: 487px) {
+  .card-container {
+    width: 240px;
+    height: 250px;
+  }
+  .card-container .card .front-content img {
+    width: 200px;
+  }
+  .card-container .card .content .name {
+    font-size: 18px;
+  }
+  .card-container .card .content .position,
+  .card-container .card .content .number,
+  .card-container .card .content .email {
+    font-size: 14px;
+  }
+}

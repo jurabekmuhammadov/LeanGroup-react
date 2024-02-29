@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.Hero .slick-slider {
+  position: relative;
+}
+.Hero .slick-slider #hero-prev-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 100;
+  background-color: transparent;
+}
+.Hero .slick-slider #hero-prev-arrow::before {
+  content: url("../../assets/images/hero-back-arrow.svg");
+  opacity: 1;
+  transition: 0.3s;
+}
+@media (max-width: 1300px) {
+  .Hero .slick-slider #hero-prev-arrow {
+    top: 83%;
+    left: 40px;
+  }
+}
+.Hero .slick-slider #hero-next-arrow {
+  position: absolute;
+  z-index: 100;
+  right: 40px;
+  background-color: transparent;
+}
+.Hero .slick-slider #hero-next-arrow::before {
+  content: url("../../assets/images/hero-next-arrow.svg");
+  opacity: 1;
+  transition: 0.3s;
+}
+@media (max-width: 1300px) {
+  .Hero .slick-slider #hero-next-arrow {
+    top: 83%;
+    right: 60px;
+  }
+}
+.Hero .slick-slider .slick-dots {
+  width: auto;
+  bottom: 70px;
+  left: 157px;
+}
+@media (max-width: 800px) {
+  .Hero .slick-slider .slick-dots {
+    width: 100%;
+    left: 0;
+    bottom: 40px;
+  }
+}
+.Hero .slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid #ef7c00;
+  transition: 0.3s;
+}
+.Hero .slick-slider .slick-dots li button::before {
+  content: "";
+}
+.Hero .slick-slider .slick-dots li button:hover {
+  background-color: #ef7c00;
+}
+.Hero .slick-slider .slick-dots .slick-active button {
+  background-color: #ef7c00;
+}

@@ -1,0 +1,96 @@
+@use "../../sass/abstracts" as *;
+.Certificate {
+  .slick-slider {
+    position: relative;
+    #prev {
+      position: absolute;
+      left: -20px;
+      top: 42%;
+      z-index: 100;
+      background-color: transparent;
+      &::before {
+        content: url("../../assets/images/back-arrow.svg");
+        font-size: 40px;
+        color: black;
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 1200px) {
+        left: -10px;
+      }
+    }
+    #next {
+      position: absolute;
+      z-index: 100;
+      right: -10px;
+      top: 42%;
+      background-color: transparent;
+      &::before {
+        content: url("../../assets/images/next-arrow.svg");
+        font-size: 40px;
+        color: black;
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 1280px) {
+        right: 0px;
+      }
+      @media (max-width: 1200px) {
+        right: 0px;
+      }
+    }
+    .slick-list {
+      margin: 10px;
+      .slick-track {
+        .slick-slide {
+          padding: 0 20px;
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          @media (max-width: 1200px) {
+            padding: 0 10px;
+          }
+          @media (max-width: 570px) {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      position: static;
+      margin-top: 20px;
+      li {
+        button {
+          &::before {
+            content: "";
+          }
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          border: 1px solid $mainColor;
+          transition: 0.3s;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+      }
+      .slick-active {
+        button {
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
+}
