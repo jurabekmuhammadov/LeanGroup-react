@@ -1,33 +1,6 @@
 .dark {
-  // background: -webkit-linear-gradient(to right, #2d2e2f, #232526);
-  // background: linear-gradient(to right, #2d2e2f, #232526);
   background-color: rgb(18, 22, 30);
-  header {
-    // background: -webkit-linear-gradient(to right, #1b202d, #1aa3e7);
-    // background: linear-gradient(to right, #414345, #232526);
-    background-color: rgb(28, 34, 48);
 
-    * {
-      color: white !important;
-    }
-    *:hover {
-      color: #ef7c00 !important;
-    }
-    .header__container {
-      .navbar-open {
-        background-color: rgb(28, 34, 48);
-        ul {
-          .menu__item {
-            &:hover {
-              .menu__link {
-                background-color: antiquewhite !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   * {
     color: white !important;
   }
@@ -35,8 +8,6 @@
     border: none !important;
   }
   header {
-    // background: -webkit-linear-gradient(to right, #1b202d, #1aa3e7);
-    // background: linear-gradient(to right, #414345, #232526);
     background-color: rgb(28, 34, 48);
 
     * {
@@ -46,14 +17,23 @@
       color: #ef7c00 !important;
     }
     .header__container {
-      .navbar-open {
+      .menu {
+        ul {
+          .menu__item {
+            &:hover {
+              .menu__link {
+                color: #ef7c00 !important;
+              }
+            }
+          }
+        }
+      }
+      .menu.navbar-open {
         background-color: rgb(28, 34, 48);
         ul {
           .menu__item {
-            .menu__link {
-              &:hover {
-                color: antiquewhite !important;
-              }
+            &:hover {
+              background-color: #fff;
             }
           }
         }

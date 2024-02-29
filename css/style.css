@@ -61,46 +61,6 @@ select {
   padding: 0 20px;
 }
 
-.dark {
-  background-color: rgb(18, 22, 30);
-}
-.dark header {
-  background-color: rgb(28, 34, 48);
-}
-.dark header * {
-  color: white !important;
-}
-.dark header *:hover {
-  color: #ef7c00 !important;
-}
-.dark header .header__container .navbar-open {
-  background-color: rgb(28, 34, 48);
-}
-.dark header .header__container .navbar-open ul .menu__item:hover .menu__link {
-  background-color: antiquewhite !important;
-}
-.dark * {
-  color: white !important;
-}
-.dark li {
-  border: none !important;
-}
-.dark header {
-  background-color: rgb(28, 34, 48);
-}
-.dark header * {
-  color: white !important;
-}
-.dark header *:hover {
-  color: #ef7c00 !important;
-}
-.dark header .header__container .navbar-open {
-  background-color: rgb(28, 34, 48);
-}
-.dark header .header__container .navbar-open ul .menu__item .menu__link:hover {
-  color: antiquewhite !important;
-}
-
 .switch {
   font-size: 17px;
   position: relative;
@@ -747,4 +707,32 @@ footer .footer__container .footer__bottom .end p {
   footer .footer__container .footer__bottom .menu .right ul {
     text-align: center;
   }
+}
+
+.dark {
+  background-color: rgb(18, 22, 30);
+}
+.dark * {
+  color: white !important;
+}
+.dark li {
+  border: none !important;
+}
+.dark header {
+  background-color: rgb(28, 34, 48);
+}
+.dark header * {
+  color: white !important;
+}
+.dark header *:hover {
+  color: #ef7c00 !important;
+}
+.dark header .header__container .menu ul .menu__item:hover .menu__link {
+  color: #ef7c00 !important;
+}
+.dark header .header__container .menu.navbar-open {
+  background-color: rgb(28, 34, 48);
+}
+.dark header .header__container .menu.navbar-open ul .menu__item:hover {
+  background-color: #fff;
 }
