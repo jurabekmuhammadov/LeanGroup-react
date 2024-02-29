@@ -28,16 +28,6 @@
           }
         }
       }
-      .menu.navbar-open {
-        background-color: rgb(28, 34, 48);
-        ul {
-          .menu__item {
-            &:hover {
-              background-color: #fff;
-            }
-          }
-        }
-      }
     }
   }
 }

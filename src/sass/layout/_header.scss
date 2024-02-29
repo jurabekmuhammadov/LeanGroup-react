@@ -183,3 +183,20 @@ header {
     padding: 10px 0;
   }
 }
+.dark {
+  header {
+    .header__container {
+      .navbar-open {
+        background-color: rgb(28, 34, 48);
+
+        .menu_item {
+          &:hover {
+            .menu_link {
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
